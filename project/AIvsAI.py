@@ -8,6 +8,8 @@ import sys
 def play(imgPath, whiteMovesFirst, ai1, ai2):
     board = chessDetection.getBoardFromImg(imgPath,whiteMovesFirst)
     board = chess.Board(board)
+    ai1 = eval(ai1)
+    ai2 = eval(ai2)
     if whiteMovesFirst:
         color = chess.BLACK
     else:
